@@ -3,29 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Sánchez López</title>
+    <title>James Noit</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Jimmy Noit</a></div>
+            <ul class="links">
+                <li><a href="Trabajo 1">Trabajo 1</a></li>
+                <li><a href="Trabajo 2">Trabajo 2</a></li>
+                <li><a href="Trabajo 3">Trabajo 3</a></li>
+                <li><a href="Trabajo 4">Trabajo 4</a></li>
+            </ul>
+            <a href="#" class="action_btn">Sign In</a>
 
-    <div class="navbar">
-        <div class="logo"><a href="#">Jimmy Noit</a></div>
-        <ul class="links">
-            <li><a href="Trabajo 1">Trabajo 1</a></li>
-            <li><a href="Trabajo 2">Trabajo 2</a></li>
-            <li><a href="Trabajo 3">Trabajo 3</a></li>
-            <li><a href="Trabajo 4">Trabajo 4</a></li>
-            <li><a href="Trabajo 5">Trabajo 5</a></li>
-            <li><a href="Trabajo 6">Trabajo 6</a></li>
-            <li><a href="Trabajo 7">Trabajo 7</a></li>
-            <li><a href="Trabajo 8">Trabajo 8</a></li>
-        </ul>
-        <a href="#" class="action_btn">Log In</a>
-        <div class="toggle-btn">
-            <i class="fa-regular fa-bars"></i>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </div>
 
-</body>
+            <div class="dropdown_menu">
+                <li><a href="Trabajo 1">Trabajo 1</a></li>
+                <li><a href="Trabajo 2">Trabajo 2</a></li>
+                <li><a href="Trabajo 3">Trabajo 3</a></li>
+                <li><a href="Trabajo 4">Trabajo 4</a></li>
+
+                <li><a href="#" class="action_btn">Sign In</a></li>
+            </div>
+
+        </header>
+
+        <main>
+            <section id="hero">
+                <h1>Bienvenido</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos excepturi, ea esse fugit.
+                    </p>
+            </section>
+        </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+            
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
 </html>
