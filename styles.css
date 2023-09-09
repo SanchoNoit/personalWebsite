@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Cyberway-Riders'; /* Name your custom font */
+    src: url('fonts/cyberway-riders-font/CyberwayRiders-lg97d.ttf') format('truetype'); /* Specify the path to the font file(s) */
+    /* Add more format declarations if you have other font formats available */
+}
+
+/* Add a gradient background */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cyberway-Riders';
+
+}
+
+body {
+    background: linear-gradient(to bottom, midnightblue, purple);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1rem;
+}
